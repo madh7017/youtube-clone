@@ -1,0 +1,30 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.content-shell {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-content {
+  width: 100%;
+  padding: 1rem;
+  transition: margin-left 0.25s ease;
+}
+
+.main-content.sidebar-open {
+  margin-left: 220px;
+}
+
+.main-content.sidebar-closed {
+  margin-left: 76px;
+}
+
+@media (max-width: 900px) {
+  .main-content.sidebar-open,
+  .main-content.sidebar-closed {
+    margin-left: 0;
+    padding: 0.75rem;
+  }
+}
